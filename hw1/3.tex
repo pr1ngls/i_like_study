@@ -71,7 +71,7 @@ $u_{tt}=a^{2}u_{xx}, \quad x \in \mathbb{R}^{1}, \quad t>0$ \\
         t = \frac{l}{2a} \\
         \begin{split}
         u(x,t) &= \frac{1}{2a} \int_{x- \frac{l}{2}}^{x + \frac{l}{2}} \theta(l -|\xi| )\,d\xi \\
-               &= \frac{1}{2a} \text{length}\left([x-\frac{l}{2},x+\frac{l}{2}]\cup [-l,l]\right)
+               &= \frac{1}{2a} \text{length}\left([x-\frac{l}{2},x+\frac{l}{2}]\cap [-l,l]\right)
         \end{split}
       \end{gather*}
     \end{minipage} \\
@@ -83,7 +83,7 @@ $u_{tt}=a^{2}u_{xx}, \quad x \in \mathbb{R}^{1}, \quad t>0$ \\
         t = \frac{l}{a} \\
         \begin{split}
         u(x,t) &= \frac{1}{2a} \int_{x- l}^{x + l} \theta(l -|\xi| )\,d\xi \\
-               &= \frac{1}{2a} \text{length}\left([x-l,x+l]\cup [-l,l]\right)
+               &= \frac{1}{2a} \text{length}\left([x-l,x+l]\cap [-l,l]\right)
         \end{split}
       \end{gather*}
     \end{minipage} \\
@@ -95,14 +95,17 @@ $u_{tt}=a^{2}u_{xx}, \quad x \in \mathbb{R}^{1}, \quad t>0$ \\
         t = \frac{2l}{a} \\
         \begin{split}
         u(x,t) &= \frac{1}{2a} \int_{x- 2l}^{x + 2l} \theta(l -|\xi| )\,d\xi \\
-               &= \frac{1}{2a} \text{length}\left([x-2l,x+2l]\cup [-l,l]\right)
+               &= \frac{1}{2a} \text{length}\left([x-2l,x+2l]\cap [-l,l]\right)
         \end{split}
       \end{gather*}
     \end{minipage} \\
 \subsection{3}
 \begin{enumerate}
+  \item[\text{а})] $u_{tt}=a^{2}u_{xx}, \ t>0, \ 0<x<l;$ \\
+    $u|_{t=0}=0, \ u_{t}|_{t=0}=0, \ u_{x}|_{x=0}=g(t), \ u_{x}|_{x=l}=0;$ \\
+    $g\in C^{1}(t \geq 0), \ g(0)=g'(0)=0.$ \\
   \item[\text{б})] $u_{tt} = u_{xx} +xe^{t}, \quad x>0,t>0$ \\
-$u|_{t=0} = 1=x, \quad u_{t}|_{t=0} = 4-5x, x \geq 0$ \\
+$u|_{t=0} = 1+x, \quad u_{t}|_{t=0} = 4-5x, x \geq 0$ \\
 $(2u+u_{x})|_{x=0}=(1+t)e^{t}+2+t-3t^{2}, \quad t \geq 0$ \\
 \begin{gather*}
   \text{Ищем частные решения} \\
