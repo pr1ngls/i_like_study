@@ -60,7 +60,7 @@ $u_{tt}=a^{2}u_{xx}, \quad x \in \mathbb{R}^{1}, \quad t>0$ \\
   \end{cases}$ \\
   \begin{gather*}
     \text{Общее решение} \\
-    u(x,t) = \frac{1}{2a}\int_{x-at}^{x+at} \psi(\xi) \,d\xi \\
+      u(x,t) = \frac{1}{2a}\int_{x-at}^{x+at} \psi(\xi) \,d\xi \\
   \end{gather*}
 \end{enumerate}
     \begin{minipage}{0.4\textwidth}
@@ -69,7 +69,10 @@ $u_{tt}=a^{2}u_{xx}, \quad x \in \mathbb{R}^{1}, \quad t>0$ \\
     \begin{minipage}{0.4\textwidth}\raggedleft
       \begin{gather*}
         t = \frac{l}{2a} \\
-        u(x,t) = \frac{1}{2a} \int_{x- \frac{l}{2}}^{x + \frac{l}{2}} \theta(l -|\xi| )\,d\xi
+        \begin{split}
+        u(x,t) &= \frac{1}{2a} \int_{x- \frac{l}{2}}^{x + \frac{l}{2}} \theta(l -|\xi| )\,d\xi \\
+               &= \frac{1}{2a} \text{length}\left([x-\frac{l}{2},x+\frac{l}{2}]\cup [-l,l]\right)
+        \end{split}
       \end{gather*}
     \end{minipage} \\
     \begin{minipage}{0.4\textwidth}
@@ -78,7 +81,10 @@ $u_{tt}=a^{2}u_{xx}, \quad x \in \mathbb{R}^{1}, \quad t>0$ \\
     \begin{minipage}{0.4\textwidth}\raggedleft
       \begin{gather*}
         t = \frac{l}{a} \\
-        u(x,t) = \frac{\varphi(x+ l)- \varphi(x -l)}{2} \\
+        \begin{split}
+        u(x,t) &= \frac{1}{2a} \int_{x- l}^{x + l} \theta(l -|\xi| )\,d\xi \\
+               &= \frac{1}{2a} \text{length}\left([x-l,x+l]\cup [-l,l]\right)
+        \end{split}
       \end{gather*}
     \end{minipage} \\
     \begin{minipage}{0.4\textwidth}
@@ -87,7 +93,10 @@ $u_{tt}=a^{2}u_{xx}, \quad x \in \mathbb{R}^{1}, \quad t>0$ \\
     \begin{minipage}{0.4\textwidth}\raggedleft
       \begin{gather*}
         t = \frac{2l}{a} \\
-        u(x,t) = \frac{\varphi(x+ 2l)- \varphi(x -l)}{2} \\
+        \begin{split}
+        u(x,t) &= \frac{1}{2a} \int_{x- 2l}^{x + 2l} \theta(l -|\xi| )\,d\xi \\
+               &= \frac{1}{2a} \text{length}\left([x-2l,x+2l]\cup [-l,l]\right)
+        \end{split}
       \end{gather*}
     \end{minipage} \\
 \subsection{3}
