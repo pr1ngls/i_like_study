@@ -1,0 +1,172 @@
+\subsection{1}
+\[
+\begin{cases}
+ 4u_{tt} = u_{xx}+4t^{2} \cos(2x) \\ u|_{t=0} = e^{x}, \ u_{t}|_{t=0} = x^{2} 
+\end{cases}
+\] \\
+\begin{gather*}
+  u_{\text{частн}}= f(t) \cos(2x) \\ 
+  4f'' \cos(2x) = -4f \cos(2x) +4t^{2} \cos(2x) \\ 
+  f''=-f+t^{2} \\
+  f = \alpha t^{2} + \beta t + \gamma \quad 2\alpha=-\alpha t^{2} - \beta t - \gamma + t^{2}\\ 
+  \alpha = 1, \ \beta = 0, \ \gamma = -2 \\
+  u_{\text{частн}} = (t^{2}-2) \cos(2x) \\
+  u = (t^{2}-2)\cos(2x) + v(x,t) \\
+  \begin{cases}
+   4v_{tt}=v_{xx} \\ v|_{t=0}=e^{x}+2\cos(2x) \\ v_{t}|_{t=0} = x^{2} \\
+  \end{cases} \\
+  \boxed{v(x,t)= \frac{1}{2}(e^{x + \frac{t}{2}}+2\cos(2x+t)+e^{x -\frac{t}{2} }+2\cos(2x-t))
+  + \int_{x- \frac{t}{2}}^{x +\frac{t}{2}} \xi^{2} \,d\xi} \\
+\end{gather*}
+
+\subsection{2}
+$u_{tt}=a^{2}u_{xx}, \quad x \in \mathbb{R}^{1}, \quad t>0$ \\
+\begin{enumerate}
+  \item[\text{а})] $u|_{t=0}=\varphi(x), \ u_{t}|_{t=0}=0;$ \\
+    \begin{gather*}
+      \text{Ф-ла Даламбера} \\
+      u(x,t) = \frac{\varphi(x+at)-\varphi(x-at)}{2} \\
+    \end{gather*}
+    \begin{minipage}{0.4\textwidth}
+  \includegraphics[width=1\linewidth]{pictures/u4.jpg} 
+    \end{minipage}
+    \begin{minipage}{0.4\textwidth}\raggedleft
+      \begin{gather*}
+        t = \frac{l}{2a} \\
+        u(x,t) = \frac{\varphi(x+ \frac{l}{2})- \varphi(x -\frac{l}{2})}{2} \\
+      \end{gather*}
+    \end{minipage} \\
+    \begin{minipage}{0.4\textwidth}
+  \includegraphics[width=1\linewidth]{pictures/u5.jpg} 
+    \end{minipage}
+    \begin{minipage}{0.4\textwidth}\raggedleft
+      \begin{gather*}
+        t = \frac{l}{a} \\
+        u(x,t) = \frac{\varphi(x+ l)- \varphi(x -l)}{2} \\
+      \end{gather*}
+    \end{minipage} \\
+    \begin{minipage}{0.4\textwidth}
+  \includegraphics[width=1\linewidth]{pictures/u6.jpg} 
+    \end{minipage}
+    \begin{minipage}{0.4\textwidth}\raggedleft
+      \begin{gather*}
+        t = \frac{2l}{a} \\
+        u(x,t) = \frac{\varphi(x+ 2l)- \varphi(x -l)}{2} \\
+      \end{gather*}
+    \end{minipage} \\
+  \item[\text{б})] $u|_{t=0}=0, \ u_{t}|_{t=0}= \psi(x)=\theta(l-|x|) \\ 
+    l = \text{const} >0 \quad \theta(x) = \begin{cases}
+    1, \ x \geq 0 \\ 0, \ x < 0
+  \end{cases}$ \\
+  \begin{gather*}
+    \text{Общее решение} \\
+    u(x,t) = \frac{1}{2a}\int_{x-at}^{x+at} \psi(\xi) \,d\xi \\
+  \end{gather*}
+\end{enumerate}
+    \begin{minipage}{0.4\textwidth}
+  \includegraphics[width=1\linewidth]{pictures/u7.jpg} 
+    \end{minipage}
+    \begin{minipage}{0.4\textwidth}\raggedleft
+      \begin{gather*}
+        t = \frac{l}{2a} \\
+        u(x,t) = \frac{1}{2a} \int_{x- \frac{l}{2}}^{x + \frac{l}{2}} \theta(l -|\xi| )\,d\xi
+      \end{gather*}
+    \end{minipage} \\
+    \begin{minipage}{0.4\textwidth}
+  \includegraphics[width=1\linewidth]{pictures/u8.jpg} 
+    \end{minipage}
+    \begin{minipage}{0.4\textwidth}\raggedleft
+      \begin{gather*}
+        t = \frac{l}{a} \\
+        u(x,t) = \frac{\varphi(x+ l)- \varphi(x -l)}{2} \\
+      \end{gather*}
+    \end{minipage} \\
+    \begin{minipage}{0.4\textwidth}
+  \includegraphics[width=1\linewidth]{pictures/u9.jpg} 
+    \end{minipage}
+    \begin{minipage}{0.4\textwidth}\raggedleft
+      \begin{gather*}
+        t = \frac{2l}{a} \\
+        u(x,t) = \frac{\varphi(x+ 2l)- \varphi(x -l)}{2} \\
+      \end{gather*}
+    \end{minipage} \\
+\subsection{3}
+\begin{enumerate}
+  \item[\text{б})] $u_{tt} = u_{xx} +xe^{t}, \quad x>0,t>0$ \\
+$u|_{t=0} = 1=x, \quad u_{t}|_{t=0} = 4-5x, x \geq 0$ \\
+$(2u+u_{x})|_{x=0}=(1+t)e^{t}+2+t-3t^{2}, \quad t \geq 0$ \\
+\begin{gather*}
+  \text{Ищем частные решения} \\
+  u_{\text{частн}} = xe^{t} \\
+  \text{Сводим ур-е у однородному} \\
+  u = xe^{t} + v(x,t) \\
+  v_{tt} = v_{xx} \qquad v|_{t=0} = (u - xe^{t})|_{t=0} = 1+x-x=1 \\
+  v_{t}|_{t=0}=(u_{t}-xe^{t})|_{t=0}=4-5x-x=4-6x \\
+  (2v+v_{x})|_{x=0} = (2u+u_{x}-2xe^{t}-e^{t})|_{x=0} = te^{t}+2+t-3t^{2}, \ t \geq 0 \\
+v = f(x+t) + g(x-t) \\
+\text{Ищем решение в области $x \geq t$} \\
+v|_{t=0} = f(x)+g(x) = 1 \qquad v_{t}|_{t=0} = f'(x) - g'(x) = 4 - 6x, \ x>= 0 \\
+f'(x) + g'(x) = 0, \qquad \text{складываем} \\
+2f'(x)=4-6x \qquad 2f'(x) = 4-6x \qquad f'(x) = 2-3x \\
+\boxed{f(x)=2x -\frac{3x^{2}}{2}+A; \qquad g(x) = 1-2x+ \frac{3x^{2}}{2}-A} \\
+v = 2(x+t) - \frac{3}{2}(x+t)^{2}+A+1-2(x-t)+ \frac{3}{2}(x-t)^{2}-A, \ x \geq t \\
+\text{Ихем решения при $x < t$} \\
+\begin{split}
+  (2v+v_{x})|_{x=0} &= 2f(t)+2g(-t)+ f'(t) + g'(-t) = \\
+                    &= te^{t} +2+t -3t^{2}, \ t>= 0 \\
+\end{split} \\
+4t-3t^{2}+2A+2g(-t)+2-3t+g'(-t) = te^{t}+2+t-3t^{2} \\
+g'(t)+2g(-t)=te^{t}-2A \qquad -t = p < 0 \\
+\end{gather*}
+\begin{gather*}
+g'(p)+2g(p)=-pe^{t}-2A \\
+  g_{\text{частн}_{1}} = (\alpha p + \beta ) e^{-p} \\
+  \alpha e^{-p}- (\alpha p +\beta)e^{-p}+2(\alpha p + \beta)e^{-p} = -pe^{-p} \\
+  \alpha +2\alpha = -1 \qquad \alpha = -1 \qquad \alpha - \beta +2 \beta = 0 \\
+  \beta = -\alpha = 1 \\
+  g_{\text{частн}_{1}} = (1-p)e^{-p} \qquad g_{\text{частн}_{2}}=-A \\
+  g(p) = ce^{-2p}+(1-p)e^{-p}-A, \quad p < 0 \\
+  \text{Сшивка(склейка)} \\
+  g(+0)= g(-0) \\
+  1-A=C+1-A \Rightarrow C = 0 \\
+  \text{Ответ} \\
+  \boxed{u(x,t)=xe^{t}+2(x+t)- \frac{3}{2}(x+t)^{2} +
+  \begin{cases}
+   1-2(x-t) + \frac{3}{2}(x-t)^{2}, \quad x \geq t \\
+   (1-(x-t))e^{-(x-t)}, \quad x <t \\
+\end{cases}}
+\end{gather*}
+\item[\text{г})] $u_{tt}+u_{xt}-2u_{xx}=0, \quad x >0, \ t>0$ \\
+  $u|_{t=0}=\sh{x}+\arctg{x}, \ u_{t}|_{t=0}= \ch{x}- \frac{2}{1+x^{2}}, \ x \geq 0$ \\
+  $u_{x}\_{x=0}=\ch{x}+1, \ t \geq 0$ \\
+  \begin{gather*}
+    (dx)^{2}-dxdt-2(dt)^{2}=0 \quad (dx-2dt)(dx+dt) = 0 \\
+    \begin{cases}
+     x = 2t + C_{1} \\ x = -t + C_{2} \\
+    \end{cases} \Leftrightarrow
+    \begin{cases}
+     \xi = x-2t \\ \mu = x=t \\ 
+    \end{cases} \\
+    u_{x} = u_{\xi} + u_{\mu} \quad u_{t} = -2u_{\xi} + u_{\mu} \\
+    u_{xx} = u_{\xi\xi} + u_{\mu\mu} + 2u_{\xi\mu} \\ 
+    u_{tt} = 4u_{\xi\xi} + u_{\mu\mu} -4u_{\xi\mu} \\
+    u_{xt} = -2u_{\xi\xi}+u_{\mu\mu}-u_{\xi\mu} \\
+  \end{gather*}
+  \begin{gather*}
+    \text{Подставляем} \\
+    u_{\xi\mu} = 0 \\
+    u = f(\xi)+g(\mu) = f(x-2t) +g(x+t) \\
+    u|_{t=0}=f(x)+g(x)= \sh{x} + \arctg{x} \Rightarrow f'(x) + g(x) + \ch{x} = \frac{1}{1+x^{2}} \\
+    u'_{t}|_{t=0}=-2f'(x)+g'(x)= \ch{x} - \frac{2}{1+x^{2}} \\
+    3f'(x) = \frac{3}{1+x^{2}} \\
+    \boxed{f(x) = \arctg{x} +A \qquad g(x) = \sh{x} - A, \ x \geq 0} \\
+    u_{x}|_{x=0} = -2tf'(t) + g'(t) = \ch{t} + 1 \\
+    f'(-2t) + \ch{t} = \ch{t} +1\\ 
+    -2t =z \quad f'(z) = 1 \quad f(z) = z + C, \ z < 0 \\
+    f(+0) = f(-0) \Rightarrow C=A \\
+    \boxed{u(x,t) = \sh{(x+t)} + 
+      \begin{cases}
+        \arctg{(x-2t)}, \quad x-2t \geq 0\\ x-2t, \quad x-2t < 0 \\
+    \end{cases}}
+  \end{gather*}
+\end{enumerate}
