@@ -101,23 +101,52 @@ $u_{tt}=a^{2}u_{xx}, \quad x \in \mathbb{R}^{1}, \quad t>0$ \\
     \end{minipage} \\
 \subsection{3}
 \begin{enumerate}
-  \item[\text{а})] $u_{tt}=a^{2}u_{xx}, \ t>0, \ 0<x<l;$ \\
-    $u|_{t=0}=0, \ u_{t}|_{t=0}=0, \ u_{x}|_{x=0}=g(t), \ u_{x}|_{x=l}=0;$ \\
-    $g\in C^{1}(t \geq 0), \ g(0)=g'(0)=0.$ \\
+  \item[\text{а})] $u_{tt}=3u_{xx}+2(1-6t^{2})e^{-2x}, \ t>0, \ x>0$ \\
+    $u|_{t=0}=1, \ u_{t}|_{t=0}=x, \ (u_{x}-2u)|_{x=0}=-2+t-4t^{2}$ \\
+    \begin{gather*}
+      \text{Ищем частное решение} \\
+    u_{\text{частн}} = e^{-2x}(At^{2}+Bt+C) \\
+    2Ae^{-2x}=12e^{-2x}(At^{2}+Bt+C)+2(1-6t^{2})e^{-2x} \\
+    2A=12At^{2}+12Bt+12C+2-12t^{2} \\
+    \end{gather*} \\
+    \begin{gather*}
+    \begin{cases}
+      A = 1, \\ B = 0, \\ C = 0;
+    \end{cases} \\
+    u_{\text{частн}} = t^{2}e^{-2x} \\
+    \text{Сводим ур-е к однородному} \\
+    u = t^{2}e^{-2x}+v(x,t) \\
+    v_{tt}=3v_{xx} \\ v|_{t=0}=1, \quad v_{t}|_{t=0}=x, \quad
+    (v_{x}-2v)|_{x=0}=-2+t \\
+    v = f(x +\sqrt{3}t)+g(x-\sqrt{3}t) \\
+    \text{Ищем решение в области $x \geq \sqrt{3}t$ }\\
+    v|_{t=0}=f(x)+g(x)=1 \qquad v_{t}|_{t=0}=\sqrt{3}f'(x)-\sqrt{3}g'(x)=x \\
+    f'(x)+g'(x)=0 \\
+    2 \sqrt{3}f'(x) = x\\ 
+    \boxed{f(x)= \frac{x^{2}}{4 \sqrt{3}} + C, \quad g(x) =1 - \frac{x^{2}}{4 \sqrt{3}} - C}\\
+    v(x,t) = 1 - \frac{(x+ \sqrt{3}t)^{2}-(x - \sqrt{3}t)^{2}}{4 \sqrt{3}} = 1 -xt \\
+    \text{Ищем решение в области $x < \sqrt{3}t$} \\
+    (v_{x}-2v)|_{x=0}=f'(\sqrt{3}t)+g'(-\sqrt{3}t)-2f(\sqrt{3}t)-2g(-\sqrt{3}t)=-2+t \\
+    \frac{t}{2}+g'(-\sqrt{3}t)-2 \frac{3t^{2}}{4 \sqrt{3}}-2g(-\sqrt{3}t)=-2+t \\
+    g'(-\sqrt{3}t)-2g(-\sqrt{3}t)=-2+ \frac{t}{2}+ \frac{3t^{2}}{2 \sqrt{3}} \\
+    \end{gather*} \\
+    \begin{gather*}
+      g'(s)-2g(s)=-2- \frac{s}{2 \sqrt{3}} + \frac{s^{2}}{2 \sqrt{3}} \\
+    \end{gather*}
   \item[\text{б})] $u_{tt} = u_{xx} +xe^{t}, \quad x>0,t>0$ \\
 $u|_{t=0} = 1+x, \quad u_{t}|_{t=0} = 4-5x, x \geq 0$ \\
 $(2u+u_{x})|_{x=0}=(1+t)e^{t}+2+t-3t^{2}, \quad t \geq 0$ \\
 \begin{gather*}
   \text{Ищем частные решения} \\
   u_{\text{частн}} = xe^{t} \\
-  \text{Сводим ур-е у однородному} \\
+  \text{Сводим ур-е к однородному} \\
   u = xe^{t} + v(x,t) \\
   v_{tt} = v_{xx} \qquad v|_{t=0} = (u - xe^{t})|_{t=0} = 1+x-x=1 \\
   v_{t}|_{t=0}=(u_{t}-xe^{t})|_{t=0}=4-5x-x=4-6x \\
   (2v+v_{x})|_{x=0} = (2u+u_{x}-2xe^{t}-e^{t})|_{x=0} = te^{t}+2+t-3t^{2}, \ t \geq 0 \\
 v = f(x+t) + g(x-t) \\
 \text{Ищем решение в области $x \geq t$} \\
-v|_{t=0} = f(x)+g(x) = 1 \qquad v_{t}|_{t=0} = f'(x) - g'(x) = 4 - 6x, \ x>= 0 \\
+v|_{t=0} = f(x)+g(x) = 1 \qquad v_{t}|_{t=0} = f'(x) - g'(x) = 4 - 6x, \ x \geq 0 \\
 f'(x) + g'(x) = 0, \qquad \text{складываем} \\
 2f'(x)=4-6x \qquad 2f'(x) = 4-6x \qquad f'(x) = 2-3x \\
 \boxed{f(x)=2x -\frac{3x^{2}}{2}+A; \qquad g(x) = 1-2x+ \frac{3x^{2}}{2}-A} \\
@@ -125,10 +154,10 @@ v = 2(x+t) - \frac{3}{2}(x+t)^{2}+A+1-2(x-t)+ \frac{3}{2}(x-t)^{2}-A, \ x \geq t
 \text{Ихем решения при $x < t$} \\
 \begin{split}
   (2v+v_{x})|_{x=0} &= 2f(t)+2g(-t)+ f'(t) + g'(-t) = \\
-                    &= te^{t} +2+t -3t^{2}, \ t>= 0 \\
+                    &= te^{t} +2+t -3t^{2}, \ t \geq 0 \\
 \end{split} \\
 4t-3t^{2}+2A+2g(-t)+2-3t+g'(-t) = te^{t}+2+t-3t^{2} \\
-g'(t)+2g(-t)=te^{t}-2A \qquad -t = p < 0 \\
+g'(-t)+2g(-t)=te^{t}-2A \qquad -t = p < 0 \\
 \end{gather*}
 \begin{gather*}
 g'(p)+2g(p)=-pe^{t}-2A \\
@@ -150,14 +179,14 @@ g'(p)+2g(p)=-pe^{t}-2A \\
 \end{gather*}
 \item[\text{г})] $u_{tt}+u_{xt}-2u_{xx}=0, \quad x >0, \ t>0$ \\
   $u|_{t=0}=\sh{x}+\arctg{x}, \ u_{t}|_{t=0}= \ch{x}- \frac{2}{1+x^{2}}, \ x \geq 0$ \\
-  $u_{x}\_{x=0}=\ch{x}+1, \ t \geq 0$ \\
+  $u_{x}|_{x=0}=\ch{x}+1, \ t \geq 0$ \\
   \begin{gather*}
     (dx)^{2}-dxdt-2(dt)^{2}=0 \quad (dx-2dt)(dx+dt) = 0 \\
     \begin{cases}
      x = 2t + C_{1} \\ x = -t + C_{2} \\
     \end{cases} \Leftrightarrow
     \begin{cases}
-     \xi = x-2t \\ \mu = x=t \\ 
+     \xi = x-2t \\ \mu = x+t \\ 
     \end{cases} \\
     u_{x} = u_{\xi} + u_{\mu} \quad u_{t} = -2u_{\xi} + u_{\mu} \\
     u_{xx} = u_{\xi\xi} + u_{\mu\mu} + 2u_{\xi\mu} \\ 
