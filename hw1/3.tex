@@ -101,7 +101,7 @@ $u_{tt}=a^{2}u_{xx}, \quad x \in \mathbb{R}^{1}, \quad t>0$ \\
     \end{minipage} \\
 \subsection{3}
 \begin{enumerate}
-  \item[\text{а})] $u_{tt}=3u_{xx}+2(1-6t^{2})e^{-2x}, \ t>0, \ x>0$ \\
+  \item[\text{а})] $21.19$ \\ $u_{tt}=3u_{xx}+2(1-6t^{2})e^{-2x}, \ t>0, \ x>0$ \\
     $u|_{t=0}=1, \ u_{t}|_{t=0}=x, \ (u_{x}-2u)|_{x=0}=-2+t-4t^{2}$ \\
     \begin{gather*}
       \text{Ищем частное решение} \\
@@ -126,13 +126,37 @@ $u_{tt}=a^{2}u_{xx}, \quad x \in \mathbb{R}^{1}, \quad t>0$ \\
     \boxed{f(x)= \frac{x^{2}}{4 \sqrt{3}} + C, \quad g(x) =1 - \frac{x^{2}}{4 \sqrt{3}} - C}\\
     v(x,t) = 1 - \frac{(x+ \sqrt{3}t)^{2}-(x - \sqrt{3}t)^{2}}{4 \sqrt{3}} = 1 -xt \\
     \text{Ищем решение в области $x < \sqrt{3}t$} \\
-    (v_{x}-2v)|_{x=0}=f'(\sqrt{3}t)+g'(-\sqrt{3}t)-2f(\sqrt{3}t)-2g(-\sqrt{3}t)=-2+t \\
-    \frac{t}{2}+g'(-\sqrt{3}t)-2 \frac{3t^{2}}{4 \sqrt{3}}-2g(-\sqrt{3}t)=-2+t \\
-    g'(-\sqrt{3}t)-2g(-\sqrt{3}t)=-2+ \frac{t}{2}+ \frac{3t^{2}}{2 \sqrt{3}} \\
+    (v_{x}-2v)|_{x=0}=f'(\sqrt{3}t)+g'(-\sqrt{3}t)-2f(\sqrt{3}t)-2g(-\sqrt{3}t)-2C=-2+t \\
+    \text{Заметим, что уравнение полученное в области $x \geq \sqrt{3}t$ также подходит} \\
+    \text{Следовательно, решения на полученных областях совпадают} \\
+    \boxed{u(x,t)=1-xt+t^{2}e^{-2x}}\\
     \end{gather*} \\
+    $21.2$ \\
+    $u_{tt}-a^{2}u_{xx}=0$ \\
+    $u|_{t=0}=u_{0}(x), \quad u_{t}|_{t=0} = u_{1}(x)$ \\
+    $u_{x}|_{x=0}=0$ \\
     \begin{gather*}
-      g'(s)-2g(s)=-2- \frac{s}{2 \sqrt{3}} + \frac{s^{2}}{2 \sqrt{3}} \\
-    \end{gather*}
+      u(x,t)=f(x+at)+g(x-at) \\
+      x \geq at \\
+      f(x)+g(x)=u_{0}(x), \quad u_{t}|_{t=0}=af'(x)-ag'(x)=u_{1}(x) \\
+      f(x)-g(x)= \frac{1}{a}\int_{0}^{x} u_{1}(\xi) \,d\xi+A \\
+      f(x)= \frac{u_{0}(x)}{2}+ \frac{1}{2a}\int_{0}^{x} u_{1}(\xi) \,d\xi+\frac{A}{2} \qquad
+      g(x)= \frac{u_{0}}{2}- \frac{1}{2a}\int_{0}^{x} u_{1}(\xi) \,d\xi-\frac{A}{2} \\
+ \boxed{ u(x,t) = \frac{u_{0}(x+at)+u_{0}(x-at)}{2}+\frac{1}{2a}
+ \int_{x-at}^{x+at} u_{1}(\xi) \,d\xi} \\
+    x<at \\
+    u_{x}|_{x=0} = f'(at)-g'(-at)=0 \Rightarrow f(at)+g(-at)=C \\
+    g(-at)=C- \frac{u_{0}(at)}{2}=\frac{1}{2a}\int_{0}^{at} u_{1}(\xi) \,d\xi-\frac{A}{2} \\
+    g(b)=C- \frac{u_{0}(-b)}{2}=\frac{1}{2a}\int_{0}^{-b} u_{1}(\xi) \,d\xi-\frac{A}{2} \\
+    \text{Сшивка} \\
+    g(+0)=g(-0) \\
+    C-\frac{A}{2}=u_{0}-\frac{A}{2} \Rightarrow C = u_{0}(0)=0 \\
+    \text{Показали, что} \\
+    \boxed{u(x,t)= \frac{1}{2a}\int_{x-at}^{x+at} u_{1}(\xi) \,d\xi + \begin{cases}
+      \frac{u_{0}(x+at)+u_{0}(x-at)}{2}, \ x \geq at \\
+      \frac{u_{0}(x+at)-u_{0}(x-at)}{2}, \ x < at \\
+  \end{cases}}
+    \end{gather*} \\
   \item[\text{б})] $u_{tt} = u_{xx} +xe^{t}, \quad x>0,t>0$ \\
 $u|_{t=0} = 1+x, \quad u_{t}|_{t=0} = 4-5x, x \geq 0$ \\
 $(2u+u_{x})|_{x=0}=(1+t)e^{t}+2+t-3t^{2}, \quad t \geq 0$ \\
@@ -151,7 +175,7 @@ f'(x) + g'(x) = 0, \qquad \text{складываем} \\
 2f'(x)=4-6x \qquad 2f'(x) = 4-6x \qquad f'(x) = 2-3x \\
 \boxed{f(x)=2x -\frac{3x^{2}}{2}+A; \qquad g(x) = 1-2x+ \frac{3x^{2}}{2}-A} \\
 v = 2(x+t) - \frac{3}{2}(x+t)^{2}+A+1-2(x-t)+ \frac{3}{2}(x-t)^{2}-A, \ x \geq t \\
-\text{Ихем решения при $x < t$} \\
+\text{Ищем решения при $x < t$} \\
 \begin{split}
   (2v+v_{x})|_{x=0} &= 2f(t)+2g(-t)+ f'(t) + g'(-t) = \\
                     &= te^{t} +2+t -3t^{2}, \ t \geq 0 \\
@@ -177,6 +201,40 @@ g'(p)+2g(p)=-pe^{t}-2A \\
    (1-(x-t))e^{-(x-t)}, \quad x <t \\
 \end{cases}}
 \end{gather*}
+\item[\text{в})] $4u_{tt}=u_{xx}-3\sin(x+t), \ x >0, \ t>0$ \\
+  $u|_{t=0}=\sin(x)+\sin(2x),\quad u_{t}|_{t=0}=2+\cos(x), \ x \geq 0$ \\
+  $(u_{x}-2u)|_{x=0}=2-4t-2\sin(t)+\cos(t), \ t \geq 0$ \\
+  \begin{gather*}
+    \text{Ищем частное решение} \\
+    u_{\text{частн}} = \sin(x+t) \\
+    \text{Сводим уравнение к однородному} \\
+    u = \sin(x+t)+v(x,t) \\
+    v_{tt}=\left(\frac{1}{2}\right)^{2}v_{xx}, \quad v|_{t=0}=\sin(2x), \quad v_{t}|_{t=0}=2 \\
+    (v_{x}-2v)|_{x=0}=2-4t, \ t \geq 0 \\
+    v = f(x+ \frac{t}{2})+g(x - \frac{t}{2}) \\
+    \end{gather*} \\
+    \begin{gather*}
+    \text{Ищем решение в области $x \geq \frac{t}{2}$} \\
+    v|_{t=0}=f(x)+g(x)=\sin(2x) \\
+    v_{t}|_{t=0}= \frac{1}{2}f'(x)- \frac{1}{2}g'(x)=2 \\
+    f'(x)+g'(x)=2\cos(2x) \qquad f'(x)=\cos(2x)+2 \\
+    \boxed{f(x)= \frac{1}{2}\sin(2x)+2x+C,\quad g(x)= \frac{1}{2}\sin(2x)-2x-C} \\
+      v(x,t)=\frac{1}{2}\sin(2x+t)+\frac{1}{2}\sin(2x-t), \ x \geq \frac{t}{2} \\
+      \text{Область $x < \frac{t}{2}$} \\
+      \left(v_{x}-2v\right)|_{x=0}=f'\left(\frac{t}{2}\right)+g'\left(-\frac{t}{2}\right)-2f\left(\frac{t}{2}\right)-2g\left(-\frac{t}{2}\right) = 
+      2 - 4t\\
+\cos\left(t\right)+2-2\left(\frac{1}{2}\sin\left(t\right)+t+C\right)+g'\left(-\frac{t}{2}\right)+g\left(-\frac{t}{2}\right)=2-4t \\
+g'(b)+g(b)+\sin(2b)+\cos(2b)-4b-2C = 0, \quad b = - \frac{t}{2} \\
+\text{Решая дифф. ур-е} \\
+g(b)=Ae^{2b}-2b-1+\frac{1}{2}\cos(2b)-C \\
+\text{Сшивка} \\
+g(+0)=g(-0) \\
+A-1+\frac{1}{2}-C=-C \Rightarrow A =\frac{1}{2} \\
+\boxed{u=\sin(x+t)+\frac{1}{2}\sin(2x+t)+\begin{cases}
+  \frac{1}{2}\sin(2x-t), \ x \geq \frac{t}{2} \\
+\frac{1}{2}\cos(2x-t)+2t-1+\frac{1}{2}e^{2x-1}, \ x < \frac{t}{2}
+\end{cases}} \\
+\end{gather*} \\
 \item[\text{г})] $u_{tt}+u_{xt}-2u_{xx}=0, \quad x >0, \ t>0$ \\
   $u|_{t=0}=\sh{x}+\arctg{x}, \ u_{t}|_{t=0}= \ch{x}- \frac{2}{1+x^{2}}, \ x \geq 0$ \\
   $u_{x}|_{x=0}=\ch{x}+1, \ t \geq 0$ \\
@@ -192,19 +250,17 @@ g'(p)+2g(p)=-pe^{t}-2A \\
     u_{xx} = u_{\xi\xi} + u_{\mu\mu} + 2u_{\xi\mu} \\ 
     u_{tt} = 4u_{\xi\xi} + u_{\mu\mu} -4u_{\xi\mu} \\
     u_{xt} = -2u_{\xi\xi}+u_{\mu\mu}-u_{\xi\mu} \\
-  \end{gather*}
-  \begin{gather*}
     \text{Подставляем} \\
     u_{\xi\mu} = 0 \\
     u = f(\xi)+g(\mu) = f(x-2t) +g(x+t) \\
     u|_{t=0}=f(x)+g(x)= \sh{x} + \arctg{x} \Rightarrow f'(x) + g(x) + \ch{x} = \frac{1}{1+x^{2}} \\
     u'_{t}|_{t=0}=-2f'(x)+g'(x)= \ch{x} - \frac{2}{1+x^{2}} \\
-    3f'(x) = \frac{3}{1+x^{2}} \\
-    \boxed{f(x) = \arctg{x} +A \qquad g(x) = \sh{x} - A, \ x \geq 0} \\
     u_{x}|_{x=0} = -2tf'(t) + g'(t) = \ch{t} + 1 \\
     f'(-2t) + \ch{t} = \ch{t} +1\\ 
     -2t =z \quad f'(z) = 1 \quad f(z) = z + C, \ z < 0 \\
     f(+0) = f(-0) \Rightarrow C=A \\
+    \end{gather*} 
+    \begin{gather*}
     \boxed{u(x,t) = \sh{(x+t)} + 
       \begin{cases}
         \arctg{(x-2t)}, \quad x-2t \geq 0\\ x-2t, \quad x-2t < 0 \\
