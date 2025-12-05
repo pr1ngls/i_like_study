@@ -1,0 +1,25 @@
+\subsection{5}
+$u_{tt}= a^{2}\Delta u, \ t > 0, \ x = (x_{1},x_{2},x_{3})\in \mathbb{R}^{3}$ \\
+$u_{0}(x) \in C^{3}(\mathbb{R}^{3}), \ u_{1}(x)\in C^{2}(\mathbb{R}^{3}), \ r = \sqrt{x^{2}+y^{2}+z^{2}}$ \\
+\begin{gather*}
+  \begin{cases}
+    u_{tt} = a^{2}(u_{r r}+ \frac{2}{r}u_{r}) \\ u|_{t=0}=\alpha(r) \\ u_{t}|_{t=0}= \beta(r) \\
+  \end{cases} \\
+  u = \frac{v}{r} \\
+  u_{r}= \frac{v_{r}}{r} - \frac{v}{r^{2}} \qquad v_{r r} = \frac{v_{r r}}{r} - \frac{2v_{r}}{r^{2}} + \frac{2v}{r^{3}} \\
+  \frac{v_{tt}}{r} = a^{2}( \frac{v_{r r}}{r} - \frac{2v_{r}}{r^{2}} + \frac{2v}{r^{3}}+\frac{2v_{r}}{r^{2}} - \frac{2v}{r^{3}}) = \frac{a^{2}v_{rr}}{r}\\
+  \begin{cases}
+    \frac{v_{tt}}{r} = \frac{a^{2}v_{rr}}{r} \\ \frac{v|_{t=0}}{r} = \alpha(r) \\ \frac{v|_{t=0}}{r} = \beta(r) \\
+  \end{cases} \begin{cases}
+    v_{tt} = a^{2}v_{r r} \\ v|_{t=0} = \alpha(r)r \\ v_{t}|_{t=0} = \beta(r)r \\
+  \end{cases} \\
+  v = \alpha\frac{(r+at)^{2}-(r-at)^{2}}{2} + \frac{1}{2a} \int_{r -at}^{r +at} \beta(R)R \,dR \\
+\end{gather*} \\
+\subsection{6} 
+$4u_{tt}= \Delta u, \: t > 0, \: (x,y,z) \in \mathbb{R}^{3}$ \\
+$u|_{t=0} = 0, \: u_{t}|_{t=0}= \begin{cases}
+  \ln(1+x^{2}+y^{2}+z^{2}), \ &(x,y,z) \in G, \\ 0. &(x,y,z) \in \mathbb{R}^{3} \setminus G,
+\end{cases}$ 
+\begin{gather*}
+  u(\vec{x},t) = \frac{1}{\pi t}  \iint_{S}^{} u_{t}|_{t=0}(\vec y) \,dS_{y} + \frac{\partial}{\partial t}
+\end{gather*}
