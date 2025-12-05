@@ -21,5 +21,13 @@ $u|_{t=0} = 0, \: u_{t}|_{t=0}= \begin{cases}
   \ln(1+x^{2}+y^{2}+z^{2}), \ &(x,y,z) \in G, \\ 0. &(x,y,z) \in \mathbb{R}^{3} \setminus G,
 \end{cases}$ 
 \begin{gather*}
-  u(\vec{x},t) = \frac{1}{\pi t}  \iint_{S}^{} u_{t}|_{t=0}(\vec y) \,dS_{y} + \frac{\partial}{\partial t}
-\end{gather*}
+  u(\vec{x},t) = \frac{1}{\pi t}  \iint_{S}^{} u_{t}|_{t=0}(\vec y) \,dS_{y}
+  + \frac{\partial}{\partial t} \frac{1}{\pi t} \iint_{S}^{}u|_{t=0}(\vec y)  \,dS_{y} = \\
+  = \frac{1}{\pi t} \iint_{\left|\vec x - \vec y \right| = \frac{t}{2}}^{} u_{t}|_{t=0}(\vec y)  \,dS_{y}+ \frac{1}{\pi} \frac{\partial}{\partial t} \frac{1}{t} \iint_{\left|\vec x - \vec y \right| = \frac{t}{2}}^{}  u|_{t=0}(\vec y)\,dS_{y} \\
+  \vec x = \vec 0 \\
+  u(\vec 0, t) =  \frac{1}{\pi t} \iint_{\left| \vec y \right| = \frac{t}{2}}^{} u_{t}|_{t=0}(\vec y)  \,dS_{y}+ \frac{1}{\pi} \frac{\partial}{\partial t} \frac{1}{t} \underbrace{\iint_{\left| \vec y \right| = \frac{t}{2}}^{}  u|_{t=0}(\vec y)\,dS_{y}}_{0} = \\
+  = \frac{1}{\pi t} \iint_{\left| \vec y \right| = \frac{t}{2}}^{} \ln(1 + (\vec y)^{2})  \,dS_{y}   
+  = \frac{1}{\pi t}\ln(1 + \frac{t^{2}}{4}) \iint_{\left| \vec y \right| = \frac{t}{2}}^{}   \,dS_{y}  = \\
+  = \frac{1}{\pi t}\ln(1 + \frac{t^{2}}{4}) \frac{4\pi |\vec y|^{2}}{4} = 
+   \frac{1}{\pi t}\ln(1 + \frac{t^{2}}{4}) \frac{\pi t^{2}}{4} = \frac{t}{4} \ln(1 + \frac{t^{2}}{4}) \\
+\end{gather*} \newpage
