@@ -47,7 +47,29 @@ $u_{r}|_{r= 1 /2} = 28\sin^{2} \varphi, \quad u_{r}|_{r=1} = 4\cos^{2} \varphi +
   \sin 2\varphi = 14 - 14\cos 2 \varphi - 24 \sin 2 \varphi \\
 v_{r}|_{r = 1} = u_{r}|_{r = 1} - u_{\text{частн},r}|_{r=1} = 4\cos^{2} \varphi - 6 \sin 2 \varphi = 
 7 + 2 \cos 2 \varphi - 6 \sin 2 \varphi \\
-\end{gather*}
+\end{gather*} \newpage
+\section{4}
+$\Delta u = - \frac{9}{r^{2}}\cos 3 \varphi, \: r > 1$ \\
+$(u-u_{r})|_{r=1}=\cos^{3} \varphi$ \\
+\begin{gather*}
+  u_{r r}+ \frac{1}{r}u_{r}+ \frac{u_{\varphi\varphi}}{r^{2}} = - \frac{9}{r^{2}}\cos 3 \varphi \\
+  u_{\text{частн}} = A \cos 3 \varphi \\
+  - \frac{9A\cos3\varphi}{r^{2}} = - \frac{9}{r^{2}} \cos 3 \varphi \Rightarrow A = 1 \\
+  u_{\text{частн}} = \cos 3 \varphi \quad v = u - u_{\text{частн}} \\
+  (v-v_{r})|_{r=1} = (u - u_{r})|_{r=1} - (u_{\text{частн}}-u_{\text{частн},r})|_{r=1} = \cos^{3} \varphi
+  - \cos 3 \varphi = \\
+  = \frac{\cos 3 \varphi + 3 \cos \varphi}{4} - 4 \cos 3 \varphi = \frac{3}{4}\cos \varphi - \frac{3}{4} \cos 3 \varphi \\
+  v = A + B\ln r + \frac{C}{r}\cos \varphi + \frac{D}{r}\sin \varphi + \frac{E}{r^{3}} + \frac{F}{r^{3}}\sin 3 \varphi \\
+  \begin{split}
+    (v - v_{r})|_{r=1} &= A + C\cos \varphi + D \sin \varphi + E \cos 3 \varphi + F \sin 3 \varphi \: - \\ 
+                       &- B + C \cos \varphi + D \sin \varphi + 3E
+                       \cos 3 \varphi + 3 F \sin 3 \varphi
+  \end{split} \\ 
+  A - B = 0 \quad C = \frac{3}{8} \quad D = 0 \quad E = - \frac{3}{16} \quad F = 0 \\
+  u = A + A \ln r + \cos 3 \varphi + \frac{3}{8r}\cos \varphi - \frac{3}{16r^{3}}\cos 3 \varphi \\
+\end{gather*} \newpage
+\section{5}
+$\Delta u = 4 \frac{(x-y)^{2}}{(x^{2}+y^{2})^{3}}$ \newpage
 % \item[\text{б)}] \[
 %   \begin{cases}
 %   u_{tt}= \Delta u +(x^{2}+y^{2})\sin{t} \\ u|_{t=0}=0, \ u_{t}|_{t=0}=(x^{2}+y^{2}+z^{2})^{5 /2}-y^{2}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.11.22)  7 DEC 2025 18:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.11.22)  15 DEC 2025 20:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -671,7 +671,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 [2] (./1.tex
-<pictures/u1.jpg, id=141, 1284.8pt x 1205.50375pt>
+<pictures/u1.jpg, id=156, 1284.8pt x 1205.50375pt>
 File: pictures/u1.jpg Graphic file (type jpg)
 <use pictures/u1.jpg>
 Package pdftex.def Info: pictures/u1.jpg  used on input line 5.
@@ -684,7 +684,7 @@ Overfull \hbox (83.81895pt too wide) in paragraph at lines 3--31
 
 
 [3 <./pictures/u1.jpg>]
-<pictures/u2.jpg, id=153, 1284.8pt x 1266.7325pt>
+<pictures/u2.jpg, id=168, 1284.8pt x 1266.7325pt>
 File: pictures/u2.jpg Graphic file (type jpg)
 <use pictures/u2.jpg>
 Package pdftex.def Info: pictures/u2.jpg  used on input line 34.
@@ -694,7 +694,7 @@ Overfull \hbox (40.9728pt too wide) in paragraph at lines 34--35
 [][] 
  []
 
-<pictures/u3.jpg, id=154, 1284.8pt x 1079.03125pt>
+<pictures/u3.jpg, id=169, 1284.8pt x 1079.03125pt>
 File: pictures/u3.jpg Graphic file (type jpg)
 <use pictures/u3.jpg>
 Package pdftex.def Info: pictures/u3.jpg  used on input line 54.
@@ -804,7 +804,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
 
 [15]
-<pictures/u4.jpg, id=211, 1284.8pt x 881.2925pt>
+<pictures/u4.jpg, id=226, 1284.8pt x 881.2925pt>
 File: pictures/u4.jpg Graphic file (type jpg)
 <use pictures/u4.jpg>
 Package pdftex.def Info: pictures/u4.jpg  used on input line 31.
@@ -814,12 +814,12 @@ Overfull \hbox (1.48087pt too wide) detected at line 37
 []
  []
 
-<pictures/u5.jpg, id=212, 1284.8pt x 847.165pt>
+<pictures/u5.jpg, id=227, 1284.8pt x 847.165pt>
 File: pictures/u5.jpg Graphic file (type jpg)
 <use pictures/u5.jpg>
 Package pdftex.def Info: pictures/u5.jpg  used on input line 40.
 (pdftex.def)             Requested size: 182.09485pt x 120.063pt.
-<pictures/u6.jpg, id=213, 1284.8pt x 773.89125pt>
+<pictures/u6.jpg, id=228, 1284.8pt x 773.89125pt>
 File: pictures/u6.jpg Graphic file (type jpg)
 <use pictures/u6.jpg>
 Package pdftex.def Info: pictures/u6.jpg  used on input line 49.
@@ -839,7 +839,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--61
 
  []
 
-<pictures/u7.jpg, id=214, 1284.8pt x 735.74875pt>
+<pictures/u7.jpg, id=229, 1284.8pt x 735.74875pt>
 File: pictures/u7.jpg Graphic file (type jpg)
 <use pictures/u7.jpg>
 Package pdftex.def Info: pictures/u7.jpg  used on input line 67.
@@ -849,7 +849,7 @@ Overfull \hbox (87.46863pt too wide) detected at line 76
 []
  []
 
-<pictures/u8.jpg, id=215, 1284.8pt x 884.30376pt>
+<pictures/u8.jpg, id=230, 1284.8pt x 884.30376pt>
 File: pictures/u8.jpg Graphic file (type jpg)
 <use pictures/u8.jpg>
 Package pdftex.def Info: pictures/u8.jpg  used on input line 79.
@@ -859,7 +859,7 @@ Overfull \hbox (67.3685pt too wide) detected at line 88
 []
  []
 
-<pictures/u9.jpg, id=216, 1284.8pt x 798.985pt>
+<pictures/u9.jpg, id=231, 1284.8pt x 798.985pt>
 File: pictures/u9.jpg Graphic file (type jpg)
 <use pictures/u9.jpg>
 Package pdftex.def Info: pictures/u9.jpg  used on input line 91.
@@ -1150,29 +1150,50 @@ Overfull \hbox (59.4253pt too wide) detected at line 50
 
 
 
-[44])
+[44]
 
-[45] (aux/main.aux)
+[45]
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+
+ []
+
+
+
+[46]
+
+[47]) (./8.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--4
+
+ []
+
+
+Overfull \hbox (17.5246pt too wide) detected at line 24
+[]
+ []
+
+)
+
+[48] (aux/main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 793699B6F48B94CBC26EF0AFA046B808;3976.
+(rerunfilecheck)             Checksum: D910842891CED288302915B2B786561B;4153.
  ) 
 Here is how much of TeX's memory you used:
- 14289 strings out of 474645
- 221374 string characters out of 5759192
- 651492 words of memory out of 5000000
- 37012 multiletter control sequences out of 15000+600000
+ 14304 strings out of 474645
+ 221520 string characters out of 5759192
+ 651489 words of memory out of 5000000
+ 37018 multiletter control sequences out of 15000+600000
  574090 words of font info for 73 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  80i,18n,82p,893b,723s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2986.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm2488.pfb>
-Output written on aux/main.pdf (45 pages, 928254 bytes).
+Output written on aux/main.pdf (48 pages, 938203 bytes).
 PDF statistics:
- 444 PDF objects out of 1000 (max. 8388607)
- 346 compressed objects within 4 object streams
- 70 named destinations out of 1000 (max. 500000)
- 238 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 473 PDF objects out of 1000 (max. 8388607)
+ 372 compressed objects within 4 object streams
+ 76 named destinations out of 1000 (max. 500000)
+ 262 words of extra memory for PDF output out of 10000 (max. 10000000)
 

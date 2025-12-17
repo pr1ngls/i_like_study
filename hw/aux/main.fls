@@ -1,4 +1,4 @@
-PWD /sda1/Projects/phystech/5sem/urmat/hw1
+PWD /sda1/Projects/phystech/5sem/urmat/hw
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
 INPUT main.tex
@@ -290,6 +290,9 @@ INPUT 6.tex
 INPUT ./7.tex
 INPUT ./7.tex
 INPUT 7.tex
+INPUT ./8.tex
+INPUT ./8.tex
+INPUT 8.tex
 INPUT aux/main.aux
 INPUT aux/main.out
 INPUT aux/main.out
